@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { response } from 'express';
 import { Periodo } from 'src/app/modelo/Periodo';
 import { PeriodoService } from 'src/app/servicios/periodo.service';
 
@@ -10,9 +9,9 @@ import { PeriodoService } from 'src/app/servicios/periodo.service';
 })
 export class PeriodoComponent implements OnInit{
 
-  mensajeError: string = '';
+  errorMensaje: string = '';
   public periodo: Periodo[] = this.peri.semestrePeriodo
-  newPeriodo: Periodo = new Periodo(0, 0, false, '', new Date(), new Date());
+  newPeriodo: Periodo = new Periodo(0, '', false, '', new Date(), new Date());
 
   constructor(private peri: PeriodoService){}
 
@@ -36,7 +35,7 @@ export class PeriodoComponent implements OnInit{
     const yearPattern = /^\d{4}$/;
 
     if(!yearPattern.test(this.newPeriodo.anio.toString())){
-      this.mensajeError = 'Porfavor ingrese un año valido';
+      this.errorMensaje = 'Porfavor ingrese un año valido';
       return;
     }
 
@@ -44,12 +43,17 @@ export class PeriodoComponent implements OnInit{
         !this.newPeriodo.denominacion ||
         !this.newPeriodo.fechaInicial ||
         !this.newPeriodo.fechaFinal){
-          this.mensajeError = 'Por favor, Complete todo los campos ;b';
+          this.errorMensaje = 'Por favor, Complete todo los campos ;b';
           return;
         }
 
+        if (new Date(this.newPeriodo.fechaFinal) < new Date(this.newPeriodo.fechaInicial)) {
+          this.errorMensaje = 'La fecha final debe ser posterior a la fecha inicial.';
+          return;
+      }
+
       // Limpia el mensaje de error si todos los campos están llenos
-      this.mensajeError = '';
+      this.errorMensaje = '';
 
       const ultimoId = this.periodo.length > 0 ? Math.max(...this.periodo.map(p => p.id)) : 0;
       this.newPeriodo.id = ultimoId + 1;
@@ -58,11 +62,11 @@ export class PeriodoComponent implements OnInit{
         (response) => {
           console.log('Semestre Creado: ', response);
           this.listarPeriodo();
-          this.newPeriodo = new Periodo(0, 0, false, '', new Date(), new Date());
+          this.newPeriodo = new Periodo(0, '', false, '', new Date(), new Date());
         },
         (error) => {
           console.error('Error al crear el Periodo: ', error);
-          this.mensajeError = 'Ocurrio un error al crear el semestre. Intentelo otra vez';
+          this.errorMensaje = 'Ocurrio un error al crear el semestre. Intentelo otra vez';
         }
       );
   }

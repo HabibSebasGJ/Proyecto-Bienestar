@@ -436,6 +436,14 @@
       "denominacion": "II",
       "fechaFinal": "08/01/2023",
       "fechaInicial": "11/30/2023"
+    },
+    {
+      "id": 2,
+      "anio": "2323",
+      "actual": false,
+      "denominacion": "II",
+      "fechaInicial": "2024-09-03",
+      "fechaFinal": "2024-09-04"
     }
   ],
   "programa": [
