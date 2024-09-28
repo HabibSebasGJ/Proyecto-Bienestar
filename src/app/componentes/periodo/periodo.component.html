@@ -1,1 +1,59 @@
-<p>periodo works!</p>
+<div class="cform card p-4 m-2" style="height: auto; max-height: 700px; overflow-y: auto;">
+  <h4 class="text-center mb-4">Semestre</h4>
+  <div class="row gy-4 p-2">
+      <div class="col-12 col-md-6">
+          <label>Año</label>
+          <input type="text"
+                 [(ngModel)]="newPeriodo.anio"
+                 name="anio"
+                 #anio="ngModel"
+                 class="form-control form-control-lg mb-2"
+                 required
+                 pattern="\\d{4}"
+                 placeholder="Ej: 2024"
+                 maxlength="4">
+          <div *ngIf="anio.invalid && (anio.dirty || anio.touched)" class="text-danger">
+              <small *ngIf="anio.errors?.['pattern']">Por favor ingrese un año válido de cuatro dígitos (Ej: 2024).</small>
+              <small *ngIf="anio.errors?.['required']">Este campo es obligatorio.</small>
+          </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+          <label>Denominación</label>
+          <select [(ngModel)]="newPeriodo.denominacion"
+                  name="denominacion"
+                  #denominacion="ngModel"
+                  required
+                  class="form-select form-select-lg mb-2">
+              <option value="" disabled selected hidden>Seleccione la denominación</option>
+              <option value="I">Semestre - I</option>
+              <option value="II">Semestre - II</option>
+          </select>
+      </div>
+
+      <div class="col-12 col-md-6">
+          <label>Fecha Inicial del Semestre:</label>
+          <input type="date"
+                 [(ngModel)]="newPeriodo.fechaInicial"
+                 name="fechaInicial"
+                 #fechaInicial="ngModel"
+                 class="form-control form-control-lg mb-2"
+                 required>
+      </div>
+
+      <div class="col-12 col-md-6">
+          <label>Fecha Final del Semestre:</label>
+          <input type="date"
+                 [(ngModel)]="newPeriodo.fechaFinal"
+                 name="fechaFinal"
+                 #fechaFinal="ngModel"
+                 class="form-control form-control-lg mb-2"
+                 required>
+      </div>
+
+      <div class="col-12">
+          <button class="btn btn-primary btn-lg m-1" (click)="crearSemestre()">Crear Periodo</button>
+      </div>
+  </div>
+</div>
+

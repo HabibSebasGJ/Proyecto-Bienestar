@@ -1,7 +1,7 @@
 {
   "actividad": [
     {
-      "id": 1,
+      "id": "1",
       "titulo": " AS",
       "dia": "Lunes",
       "estado": "Activo",
@@ -18,7 +18,7 @@
       "instructor_id": "9"
     },
     {
-      "id": 2,
+      "id": "2",
       "titulo": " RG",
       "dia": "Miercoles",
       "estado": "Activo",
@@ -35,7 +35,7 @@
       "instructor_id": "9"
     },
     {
-      "id": 3,
+      "id": "3",
       "titulo": " BN",
       "dia": "Viernes",
       "estado": "Activo",
@@ -52,7 +52,7 @@
       "instructor_id": "8"
     },
     {
-      "id": 4,
+      "id": "4",
       "titulo": " GUA",
       "dia": "Martes",
       "estado": "Activo",
@@ -69,7 +69,7 @@
       "instructor_id": "9"
     },
     {
-      "id": 5,
+      "id": "5",
       "titulo": " ol",
       "dia": "Jueves",
       "estado": "Activo",
@@ -86,7 +86,7 @@
       "instructor_id": "9"
     },
     {
-      "id": 1,
+      "id": "1",
       "titulo": " AS",
       "dia": "Jueves",
       "estado": "Inactivo",
@@ -103,7 +103,7 @@
       "instructor_id": "2"
     },
     {
-      "id": 2,
+      "id": "2",
       "titulo": "HHG",
       "dia": "Miercoles",
       "estado": "Activo",

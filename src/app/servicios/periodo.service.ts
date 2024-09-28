@@ -16,4 +16,8 @@ export class PeriodoService {
   obtenerSemestre(): Observable<any[]> {
     return this.httpClient.get<any[]>(this.UrlApi);
   }
+
+  crearSemestre(actividad: Periodo): Observable<any>  {
+    return this.httpClient.post(this.UrlApi, actividad);
+  }
 }

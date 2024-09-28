@@ -1,0 +1,24 @@
+.cform {
+  max-width: 600px; /* Limitar el ancho máximo del formulario */
+  margin: auto; /* Centrar el formulario horizontalmente */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.form-control,
+.form-select {
+  font-size: 14px; /* Tamaño de fuente más pequeño */
+  padding: 10px; /* Ajustar el padding para hacer los campos más compactos */
+  margin-bottom: 10px; /* Espaciado entre campos */
+}
+
+h4 {
+  font-size: 18px; /* Tamaño de fuente del título */
+  margin-bottom: 20px; /* Espaciado inferior del título */
+}
+
+.btn {
+  padding: 8px 15px; /* Ajustar el tamaño del botón */
+  font-size: 14px; /* Tamaño de fuente del botón */
+}
