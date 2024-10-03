@@ -10,8 +10,10 @@ import { PeriodoService } from 'src/app/servicios/periodo.service';
 export class PeriodoComponent implements OnInit{
 
   errorMensaje: string = '';
+  errorMensajeCambiar: string = '';
   public periodo: Periodo[] = this.peri.semestrePeriodo
   newPeriodo: Periodo = new Periodo(0, '', false, '', new Date(), new Date());
+  selectedSemestre: number | null = null;
 
   constructor(private peri: PeriodoService){}
 
@@ -70,4 +72,32 @@ export class PeriodoComponent implements OnInit{
         }
       );
   }
+
+  cambiarSemestre(): void {
+    if (!this.selectedSemestre) {
+      this.errorMensajeCambiar = 'Por favor, seleccione un semestre para cambiar.';
+      return;
+    }
+  
+    // Limpia el mensaje de error anterior
+    this.errorMensajeCambiar = '';
+  
+    // Cambia el estado de los semestres
+    this.periodo.forEach(p => {
+      p.actual = p.id === this.selectedSemestre;
+    });
+  
+    // Llama al servicio para actualizar el estado en el backend
+    this.peri.actualizarSemestre(this.periodo).subscribe(
+      response => {
+        console.log('Semestre cambiado: ', response);
+        this.listarPeriodo(); // Actualiza la lista para reflejar cambios
+      },
+      error => {
+        console.error('Error al cambiar el semestre:', error);
+        this.errorMensajeCambiar = 'Ocurrió un error al cambiar el semestre. Inténtelo de nuevo.';
+      }
+    );
+  }
+  
 }

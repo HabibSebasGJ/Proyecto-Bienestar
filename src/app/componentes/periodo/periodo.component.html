@@ -40,16 +40,30 @@
   <div class="row gy-4 p-2">
 
     <div class="col-12 col-md-6">
-      <label>Denominación</label>
-      <select [(ngModel)]="newPeriodo.anio" name="anio" #denominacion="ngModel" required class="form-select form-select-lg mb-2">
-          <option value="" disabled selected hidden>Seleccione la denominación</option>
-          <option value="I">Semestre - I</option>
-          <option value="II">Semestre - II</option>
+      <label>Seleccionar Semestre</label>
+      <select [(ngModel)]="selectedSemestre" name="selectedSemestre" #selectedSemestreModel="ngModel" required class="form-select form-select-lg mb-2">
+        <option value="" disabled selected hidden>Seleccione el semestre</option>
+        <option *ngFor="let p of periodo" [value]="p.id">{{ p.anio }} - Semestre {{ p.denominacion }}</option>
       </select>
     </div>
 
+    <div *ngIf="errorMensajeCambiar" class="alert alert-danger">
+      {{ errorMensajeCambiar }}
+    </div>
+    
+
     <div class="col-12">
-      <button class="btn btn-primary btn-lg m-1">Cambiar</button>
+      <h5>Semestres Disponibles:</h5>
+      <ul class="list-unstyled">
+        <li *ngFor="let p of periodo" [class.font-weight-bold]="p.actual">
+          {{ p.anio }} - Semestre {{ p.denominacion }} 
+          <span *ngIf="p.actual">(Actual)</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-12">
+      <button class="btn btn-primary btn-lg m-1" (click)="cambiarSemestre()">Cambiar</button>
     </div>
   </div>
 </div>

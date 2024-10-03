@@ -20,4 +20,8 @@ export class PeriodoService {
   crearSemestre(actividad: Periodo): Observable<any>  {
     return this.httpClient.post(this.UrlApi, actividad);
   }
+
+  actualizarSemestre(periodos: Periodo[]): Observable<any> {
+    return this.httpClient.put('URL_DEL_BACKEND', periodos);
+  }  
 }
