@@ -431,7 +431,7 @@
   "periodo": [
     {
       "id": "1",
-      "actual": true,
+      "actual": false,
       "anio": 2023,
       "denominacion": "II",
       "fechaFinal": "08/01/2023",
@@ -439,19 +439,35 @@
     },
     {
       "id": "2",
-      "anio": "2323",
       "actual": false,
-      "denominacion": "II",
-      "fechaInicial": "2024-09-03",
-      "fechaFinal": "2024-09-04"
+      "denominacion": "I",
+      "fechaInicial": "2024-10-14",
+      "fechaFinal": "2024-10-24",
+      "anio": "2024"
     },
     {
-      "id": 3,
+      "id": "3",
+      "actual": false,
+      "denominacion": "II",
+      "fechaInicial": "2024-09-30",
+      "fechaFinal": "2024-10-22",
+      "anio": "2026"
+    },
+    {
+      "id": 4,
       "anio": "2025",
       "actual": false,
       "denominacion": "I",
-      "fechaInicial": "2025-02-03",
-      "fechaFinal": "2025-04-03"
+      "fechaInicial": "2024-10-22",
+      "fechaFinal": "2024-10-23"
+    },
+    {
+      "id": 5,
+      "anio": "2025",
+      "actual": false,
+      "denominacion": "II",
+      "fechaInicial": "2024-10-22",
+      "fechaFinal": "2024-10-29"
     }
   ],
   "programa": [

@@ -21,7 +21,8 @@ export class PeriodoService {
     return this.httpClient.post(this.UrlApi, actividad);
   }
 
-  actualizarSemestre(periodos: Periodo[]): Observable<any> {
-    return this.httpClient.put('URL_DEL_BACKEND', periodos);
-  }  
+  cambiarEstadoSemestre(id: number, estado: boolean): Observable<any> {
+    return this.httpClient.patch(`${this.UrlApi}/${id}`, { actual: estado });
+  }
+
 }
