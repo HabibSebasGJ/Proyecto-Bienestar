@@ -22,7 +22,7 @@ import { PeriodoService } from 'src/app/servicios/periodo.service';
 export class ActividadComponent implements OnInit {
 
   private idContador: number = 1 ;
-
+  semestreActual: Periodo | null = null;
   mensajeError: string = '';
 
   public usuarios: Usuario[] = [];
@@ -95,8 +95,6 @@ export class ActividadComponent implements OnInit {
       }
     );
   }
-
-
 
   listarUsuarios() {
     this.instser.obtenerUsuarios().subscribe(
@@ -200,4 +198,5 @@ export class ActividadComponent implements OnInit {
     );
   }
 
+  
 }

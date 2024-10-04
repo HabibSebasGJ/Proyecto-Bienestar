@@ -18,6 +18,17 @@
                   {{usuario.apellido}} - {{ usuario.id }}</a>
           </div>
           <hr class="enter">
+          <ul class="nav nav-pills flex-column mb-auto mt-5">
+            <li>
+              <a class="nav-link text-white">
+                  <svg class="bi bi-file-ruled" width="16" height="16">
+                      <use xlink:href="#table"></use>
+                  </svg>
+                  <button (click)="mostrarComponentePeriodo()" class="btn1 bi bi-file-ruled" style="text-align: start;" aria-current="page"> Gestor Periodos</button>
+              </a>
+          </li>
+          </ul>
+          <hr class="enter">
           <div class="dropdown">
               <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
                   data-bs-toggle="dropdown" aria-expanded="false">
@@ -41,6 +52,6 @@
     <div class="container-fluid p-3 mb-1 border-bottom bg-primary" style="height: 60px;">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"></div>
     </div>
-    <app-periodo></app-periodo>
+    <app-periodo *ngIf="mostrarPeriodo"></app-periodo>
   </div>
 </div>
