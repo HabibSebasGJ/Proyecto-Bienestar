@@ -129,13 +129,13 @@
       "inscripcion_id": 1
     },
     {
-      "id": 3,
+      "id": "3",
       "asistio": true,
       "fecha": "2024-05-22T17:46:24.533Z",
       "inscripcion_id": "10"
     },
     {
-      "id": 1,
+      "id": "1",
       "asistio": true,
       "fecha": "2024-05-22T18:24:06.569Z",
       "inscripcion_id": "9"
@@ -232,13 +232,6 @@
       "actividad_id": "1"
     },
     {
-      "id": "7",
-      "tipoVinculacion": "Estudiante",
-      "fechaInscripcion": "2024-01-10T1:33:34.828Z",
-      "usuario": "3",
-      "actividad_id": "1"
-    },
-    {
       "id": "10",
       "tipoVinculacion": "Estudiante",
       "fechaInscripcion": "2024-04-10T5:33:34.828Z",
@@ -251,6 +244,97 @@
       "fechaInscripcion": "2024-04-10T9:33:34.828Z",
       "usuario": "6",
       "actividad_id": "4"
+    },
+    {
+      "id": 1,
+      "tipoVinculacion": "Estudiante",
+      "fechaInscripcion": "2024-10-04T16:29:13.405Z",
+      "usuario": "3",
+      "actividad_id": "2"
+    },
+    {
+      "id": 1,
+      "tipoVinculacion": "Estudiante",
+      "fechaInscripcion": "2024-10-04T16:29:17.678Z",
+      "usuario": "3",
+      "actividad_id": "3"
+    },
+    {
+      "id": 1,
+      "tipoVinculacion": "Estudiante",
+      "fechaInscripcion": "2024-10-04T16:29:20.359Z",
+      "usuario": "3",
+      "actividad_id": "5"
+    },
+    {
+      "id": 1,
+      "tipoVinculacion": "Estudiante",
+      "fechaInscripcion": "2024-10-04T16:29:40.728Z",
+      "usuario": "3",
+      "actividad_id": "3"
+    },
+    {
+      "id": 1,
+      "tipoVinculacion": "Estudiante",
+      "fechaInscripcion": "2024-10-04T16:30:01.947Z",
+      "usuario": "3",
+      "actividad_id": "3"
+    },
+    {
+      "id": 1,
+      "tipoVinculacion": "Estudiante",
+      "fechaInscripcion": "2024-10-04T17:13:03.343Z",
+      "usuario": "3",
+      "actividad_id": "5"
+    },
+    {
+      "id": 1,
+      "tipoVinculacion": "Estudiante",
+      "fechaInscripcion": "2024-10-04T17:13:47.851Z",
+      "usuario": "3",
+      "actividad_id": "100"
+    },
+    {
+      "id": 1,
+      "tipoVinculacion": "Estudiante",
+      "fechaInscripcion": "2024-10-04T17:13:52.857Z",
+      "usuario": "3",
+      "actividad_id": "3"
+    },
+    {
+      "id": 1,
+      "tipoVinculacion": "Estudiante",
+      "fechaInscripcion": "2024-10-04T17:25:42.245Z",
+      "usuario": "3",
+      "actividad_id": "2"
+    },
+    {
+      "id": 1,
+      "tipoVinculacion": "Estudiante",
+      "fechaInscripcion": "2024-10-04T17:25:43.879Z",
+      "usuario": "3",
+      "actividad_id": "2"
+    },
+    {
+      "id": 1,
+      "tipoVinculacion": "Estudiante",
+      "fechaInscripcion": "2024-10-04T17:25:45.794Z",
+      "usuario": "3",
+      "actividad_id": "2"
+    },
+    {
+      "id": 1,
+      "tipoVinculacion": "Estudiante",
+      "fechaInscripcion": "2024-10-04T17:25:47.968Z",
+      "usuario": "3",
+      "actividad_id": "2"
+    },
+    {
+      "id": 1,
+      "tipoVinculacion": "Estudiante",
+      "fechaInscripcion": "2024-10-04T17:25:49.981Z",
+      "usuario": "3",
+      "actividad_id": "2"
     }
   ],
   "instructor": [
@@ -391,7 +475,7 @@
       "id": "9"
     },
     {
-      "id": 11,
+      "id": "11",
       "especialidad": "erered",
       "disciplina": {
         "id": "2",
@@ -401,7 +485,7 @@
       }
     },
     {
-      "id": 11,
+      "id": "11",
       "especialidad": "",
       "disciplina": {
         "id": "2",
@@ -583,7 +667,7 @@
       "estado": "Activo"
     },
     {
-      "id": 11,
+      "id": "11",
       "nombre": "everest",
       "apellido": "everest",
       "identificacion": "10233",
@@ -595,7 +679,7 @@
       "estado": "Activo"
     },
     {
-      "id": 11,
+      "id": "11",
       "nombre": "everest",
       "apellido": "everest",
       "identificacion": "10233",

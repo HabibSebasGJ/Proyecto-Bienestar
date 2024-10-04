@@ -1,13 +1,34 @@
+.btn-eliminar {
+    background-color: red;
+    color: black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .btn-eliminar i {
+    margin-right: 5px;
+  }
+  
+  .btn-eliminar:hover {
+    background-color: darkred;
+  }
+  
 .dia {
     width: 200px;
     text-align: center;
 }
 
 .acti {
-    background-color: #D6EAF8;
-    height: 500px;
-    position: relative;
+  background-color: #D6EAF8;
+  height: 800px;
+  position: relative; 
+  overflow: auto;  /* Esto habilita la barra desplazadora cuando el contenido excede la altura */
 }
+
 
 .info {
     position: absolute;

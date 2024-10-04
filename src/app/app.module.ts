@@ -64,7 +64,8 @@ import { InformadorComponent } from './utilidades/informador/informador.componen
     HorarioIDeportivoComponent,
     MiHorarioComponent,
     ListaInscripcionComponent,
-    CronogramaActividadesInstructorComponent
+    CronogramaActividadesInstructorComponent,
+    
   ],
   imports: [
     BrowserModule,

@@ -11,7 +11,7 @@
                                 <div class="card p-2 m-0">
                                     <h3 class="card-title m-0">{{ acti.titulo }}</h3>
                                     <hr class="m-1">
-                                    <strong class="m-0" style="text-align: center;">Hora:</strong>
+                                    <strong class="m-0" >Hora:</strong>
                                     <div class="row">
                                         <div class="col-md-6 mb-1">
                                             <h3 class="m-0">Inicio: </h3>
@@ -25,9 +25,14 @@
                                                 {{acti.horaFinal}}
                                             </h5>
                                         </div>
+
                                         <div class="row">
                                             <p class="info col-md-6 m-0 bi bi-info-circle bi-2x"
-                                                style="text-align: end; width: 45%; height: auto;"></p>
+                                                style="text-align: end; width: 45%; height: auto;">
+                                            </p>
+                                                <button (click)="eliminarActividad(inscripcion.id)" class="btn-eliminar">
+                                                    <i class="fa fa-trash"></i> desvincular
+                                                </button>
                                         </div>
                                     </div>
                                </div>
@@ -64,6 +69,9 @@
                                         <div class="row">
                                             <p class="info col-md-6 m-0 bi bi-info-circle bi-2x"
                                                 style="text-align: end; width: 45%; height: auto;"></p>
+                                                <button (click)="eliminarActividad(inscripcion.id)" class="btn-eliminar">
+                                                    <i class="fa fa-trash"></i> desvincular
+                                                  </button>
                                         </div>
                                     </div>
                                </div>
@@ -100,6 +108,9 @@
                                         <div class="row">
                                             <p class="info col-md-6 m-0 bi bi-info-circle bi-2x"
                                                 style="text-align: end; width: 45%; height: auto;"></p>
+                                                <button (click)="eliminarActividad(inscripcion.id)" class="btn-eliminar">
+                                                    <i class="fa fa-trash"></i> desvincular
+                                                  </button>
                                         </div>
                                     </div>
                                </div>
@@ -136,6 +147,9 @@
                                         <div class="row">
                                             <p class="info col-md-6 m-0 bi bi-info-circle bi-2x"
                                                 style="text-align: end; width: 45%; height: auto;"></p>
+                                                <button (click)="eliminarActividad(inscripcion.id)" class="btn-eliminar">
+                                                    <i class="fa fa-trash"></i> desvincular
+                                                  </button>
                                         </div>
                                     </div>
                                </div>
@@ -172,6 +186,9 @@
                                         <div class="row">
                                             <p class="info col-md-6 m-0 bi bi-info-circle bi-2x"
                                                 style="text-align: end; width: 45%; height: auto;"></p>
+                                                <button (click)="eliminarActividad(inscripcion.id)" class="btn-eliminar">
+                                                    <i class="fa fa-trash"></i> desvincular
+                                                  </button>
                                         </div>
                                     </div>
                                </div>
@@ -183,5 +200,5 @@
         </div>
     </div>
 
-
+    
 </div>
