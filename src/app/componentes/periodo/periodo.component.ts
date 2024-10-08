@@ -96,7 +96,7 @@ export class PeriodoComponent implements OnInit {
 
     this.peri.cambiarEstadoSemestre(semestre.id, nuevoEstado).subscribe(
       (response) => {
-        semestre.actual = nuevoEstado; // Actualiza el estado en la vista
+        semestre.actual = nuevoEstado;
         console.log('Estado del semestre actualizado:', response);
       },
       (error) => {
