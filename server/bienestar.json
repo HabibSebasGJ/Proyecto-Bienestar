@@ -454,7 +454,7 @@
       "anio": "2026"
     },
     {
-      "id": 4,
+      "id": "4",
       "anio": "2025",
       "actual": false,
       "denominacion": "I",
@@ -462,7 +462,7 @@
       "fechaFinal": "2024-10-23"
     },
     {
-      "id": 5,
+      "id": "5",
       "anio": "2025",
       "actual": false,
       "denominacion": "II",
