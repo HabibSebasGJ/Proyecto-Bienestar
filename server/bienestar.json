@@ -451,6 +451,14 @@
       "denominacion": "II",
       "fechaInicial": "2024-10-22",
       "fechaFinal": "2024-10-29"
+    },
+    {
+      "id": 6,
+      "anio": "2026",
+      "actual": false,
+      "denominacion": "I",
+      "fechaInicial": "2026-10-09",
+      "fechaFinal": "2026-12-17"
     }
   ],
   "programa": [

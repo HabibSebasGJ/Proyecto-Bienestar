@@ -30,7 +30,7 @@ export class PeriodoComponent implements OnInit {
       (error) => {
         console.error('Error al obtener semestres:', error);
       }
-    );
+    );    
   }
 
 
