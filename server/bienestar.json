@@ -471,11 +471,19 @@
     },
     {
       "id": 6,
+<<<<<<< HEAD
       "anio": "2024",
       "actual": false,
       "denominacion": "II",
       "fechaInicial": "2024-10-01",
       "fechaFinal": "2024-10-31"
+=======
+      "anio": "2026",
+      "actual": false,
+      "denominacion": "I",
+      "fechaInicial": "2026-10-09",
+      "fechaFinal": "2026-12-17"
+>>>>>>> f40dec4d250e530f6680c244ebb3ba0da77e03a1
     }
   ],
   "programa": [
