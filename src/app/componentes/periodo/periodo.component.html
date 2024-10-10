@@ -28,6 +28,10 @@
       <div *ngIf="errorMensaje" class="alert alert-danger">
         {{ errorMensaje }}
       </div>
+      
+      <div *ngIf="goodMensaje" class="alert alert-success">
+        {{ goodMensaje }}
+      </div>
 
       <div class="col-12">
           <button class="btn btn-primary btn-lg m-1" (click)="crearSemestre()">Crear Periodo</button>

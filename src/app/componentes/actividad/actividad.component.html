@@ -88,15 +88,15 @@
           <div class="row gy-2 p-2 cdar">
               <div class="col-12 col-md-6">
                   <label>Titulo:</label>
-                  <input type="text" [(ngModel)]="actividad.titulo" name="titulo" #titulo="ngModel" placeholder="Nombre" class="form-control form-control-sm me-2" required>
+                  <input type="text" [(ngModel)]="actividad.titulo" name="titulo" #titulo="ngModel" placeholder="Nombre" class="form-control form-control-sm me-2" required (input)="cambiarEstado('Activo')" (blur)="cambiarEstado('Inactivo')">
               </div>
               <div class="col-12 col-md-6">
                   <label>Fecha Final de Inscripción:</label>
-                  <input type="date" [(ngModel)]="actividad.fechaFinalInscripcion" name="fechaFinalInscripcion" #fechaFinalInscripcion="ngModel" class="form-control form-control-sm me-2" required>
+                  <input type="date" [(ngModel)]="actividad.fechaFinalInscripcion" name="fechaFinalInscripcion" #fechaFinalInscripcion="ngModel" class="form-control form-control-sm me-2" required (input)="cambiarEstado('Activo')" (blur)="cambiarEstado('Inactivo')">
               </div>
               <div class="col-12 col-md-6">
                   <label>Hora de inicio:</label>
-                  <input type="time" [(ngModel)]="actividad.horaInicial" name="horaInicial" #horaInicial="ngModel" class="form-control form-control-sm me-2" required>
+                  <input type="time" [(ngModel)]="actividad.horaInicial" name="horaInicial" #horaInicial="ngModel" class="form-control form-control-sm me-2" required (input)="cambiarEstado('Activo')" (blur)="cambiarEstado('Inactivo')">
               </div>
               <div class="col-12 col-md-6">
                   <label>Hora de finalización:</label>
@@ -116,14 +116,12 @@
 
               </div>
               <div class="col-12 col-md-6">
-                  <label>Estado:</label>
-                  <select [(ngModel)]="actividad.estado" name="estado"
-                          #estado="ngModel" required class="form-select form-select-sm">
-                      <option value="" disabled selected hidden>Selecciona estado</option>
-                      <option value="Activo">Activo</option>
-                      <option value="Inactivo">Inactivo</option>
-                  </select>
-              </div>
+                <label>Estado:</label>
+                <div class="form-control form-control-sm">
+                    {{ actividad.estado }}
+                </div>
+            </div>
+            
               <div class="col-12 col-md-6">
                   <label>Escenario:</label>
                   <input type="text" value="{{escenario.nombre}}" disabled class="form-control form-control-sm me-2">

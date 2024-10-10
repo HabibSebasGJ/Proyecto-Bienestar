@@ -103,7 +103,7 @@
       "instructor_id": "7"
     },
     {
-      "id": 1,
+      "id": "1",
       "titulo": " Futbol",
       "dia": "Viernes",
       "estado": "Activo",
@@ -120,7 +120,7 @@
       "instructor_id": "8"
     },
     {
-      "id": 2,
+      "id": "2",
       "titulo": "Voleibol",
       "dia": "Lunes",
       "estado": "Activo",
@@ -455,7 +455,7 @@
       "fechaInicial": "11/30/2023"
     },
     {
-      "id": 2,
+      "id": "2",
       "anio": "2024",
       "actual": false,
       "denominacion": "I",
@@ -463,7 +463,7 @@
       "fechaFinal": "2024-10-15"
     },
     {
-      "id": 3,
+      "id": "3",
       "anio": "2024",
       "actual": false,
       "denominacion": "II",
@@ -471,7 +471,7 @@
       "fechaFinal": "2024-10-17"
     },
     {
-      "id": 4,
+      "id": "4",
       "anio": "2025",
       "actual": false,
       "denominacion": "I",
@@ -479,28 +479,12 @@
       "fechaFinal": "2025-12-11"
     },
     {
-      "id": 5,
+      "id": "5",
       "anio": "2025",
       "actual": false,
       "denominacion": "II",
-      "fechaInicial": "2025-10-14",
-      "fechaFinal": "2025-10-30"
-    },
-    {
-      "id": 6,
-<<<<<<< HEAD
-      "anio": "2024",
-      "actual": false,
-      "denominacion": "II",
-      "fechaInicial": "2024-10-01",
-      "fechaFinal": "2024-10-31"
-=======
-      "anio": "2026",
-      "actual": false,
-      "denominacion": "I",
-      "fechaInicial": "2026-10-09",
-      "fechaFinal": "2026-12-17"
->>>>>>> f40dec4d250e530f6680c244ebb3ba0da77e03a1
+      "fechaInicial": "2024-10-22",
+      "fechaFinal": "2024-10-29"
     }
   ],
   "programa": [

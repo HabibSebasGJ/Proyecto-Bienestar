@@ -10,6 +10,7 @@ import { PeriodoService } from 'src/app/servicios/periodo.service';
 })
 export class PeriodoComponent implements OnInit {
 
+  goodMensaje: string = '';
   errorMensaje: string = '';
   errorMensaje2: string = '';
   public periodo: Periodo[] = this.peri.semestrePeriodo;
@@ -58,6 +59,7 @@ export class PeriodoComponent implements OnInit {
 
     // Limpia el mensaje de error si todos los campos están llenos
     this.errorMensaje = '';
+    this.goodMensaje = '';
 
     // const ultimoId = this.periodo.length > 0 ? Math.max(...this.periodo.map(p => parseInt(p.id))) : 0;
     // this.newPeriodo.id = (ultimoId + 1).toString(); // Convertir a cadena
@@ -68,6 +70,7 @@ export class PeriodoComponent implements OnInit {
         console.log('Semestre Creado: ', response);
         this.listarPeriodo();
         this.newPeriodo = new Periodo(0, '', false, '', new Date(), new Date());
+        this.goodMensaje = 'Semestre Creado';
       },
       (error) => {
         console.error('Error al crear el Periodo: ', error);

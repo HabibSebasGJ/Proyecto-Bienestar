@@ -168,6 +168,11 @@ export class ActividadComponent implements OnInit {
       );
   }
 
+  cambiarEstado(nuevoEstado: string): void {
+    this.actividad.estado = nuevoEstado;
+  }
+  
+
   eliminarActividad(id: number) {
     console.log('ID a eliminar:', id);
     this.acti.eliminarActividad(id).subscribe(
