@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { response } from 'express';
 import { Periodo } from 'src/app/modelo/Periodo';
 import { PeriodoService } from 'src/app/servicios/periodo.service';
 
@@ -106,4 +107,11 @@ export class PeriodoComponent implements OnInit {
     );
   }
 
+  // savedHorario(semestreId: number){
+  //   this.coordinadorService.savedHorario(semestreId, this.coordinador.horario).subscribe(
+  //     (response) => {
+  //       console.log('Horario Guardado', semestreId);
+  //     }
+  //   )
+  // }
 }

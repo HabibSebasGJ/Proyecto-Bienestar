@@ -1,23 +1,6 @@
 {
   "actividad": [
     {
-      "id": "1",
-      "titulo": " AS",
-      "dia": "Lunes",
-      "estado": "Activo",
-      "horaInicial": "21:52",
-      "horaFinal": "12:49",
-      "fechaCreacion": "2024-09-27T02:48:26.268Z",
-      "fechaPublicacion": "2024-09-27T02:48:26.268Z",
-      "fechaInicioInscripcion": "2024-09-27T02:48:26.268Z",
-      "fechaFinalInscripcion": "2024-09-03",
-      "escenario_id": "3",
-      "tipoActividad_id": "1",
-      "periodo_id": "1",
-      "coordinador_id": 0,
-      "instructor_id": "9"
-    },
-    {
       "id": "2",
       "titulo": " RG",
       "dia": "Miercoles",
@@ -101,6 +84,40 @@
       "periodo_id": 0,
       "coordinador_id": 0,
       "instructor_id": "7"
+    },
+    {
+      "id": 1,
+      "titulo": " Futbol",
+      "dia": "Viernes",
+      "estado": "Activo",
+      "horaInicial": "00:39",
+      "horaFinal": "15:39",
+      "fechaCreacion": "2024-10-10T03:39:28.520Z",
+      "fechaPublicacion": "2024-10-10T03:39:28.520Z",
+      "fechaInicioInscripcion": "2024-10-10T03:39:28.520Z",
+      "fechaFinalInscripcion": "2024-10-01",
+      "escenario_id": "3",
+      "tipoActividad_id": "1",
+      "periodo_id": 0,
+      "coordinador_id": 0,
+      "instructor_id": "8"
+    },
+    {
+      "id": 2,
+      "titulo": "Voleibol",
+      "dia": "Lunes",
+      "estado": "Activo",
+      "horaInicial": "23:40",
+      "horaFinal": "22:42",
+      "fechaCreacion": "2024-10-10T03:40:00.241Z",
+      "fechaPublicacion": "2024-10-10T03:40:00.241Z",
+      "fechaInicioInscripcion": "2024-10-10T03:40:00.241Z",
+      "fechaFinalInscripcion": "2024-10-01",
+      "escenario_id": "2",
+      "tipoActividad_id": "2",
+      "periodo_id": 0,
+      "coordinador_id": 0,
+      "instructor_id": "8"
     }
   ],
   "area": [
@@ -451,6 +468,14 @@
       "denominacion": "II",
       "fechaInicial": "2024-10-22",
       "fechaFinal": "2024-10-29"
+    },
+    {
+      "id": 6,
+      "anio": "2024",
+      "actual": false,
+      "denominacion": "II",
+      "fechaInicial": "2024-10-01",
+      "fechaFinal": "2024-10-31"
     }
   ],
   "programa": [
