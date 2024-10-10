@@ -1,4 +1,4 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Actividad } from 'src/app/modelo/Actividad';
 import { Coordinador } from 'src/app/modelo/Coordinador';
 import { Disciplina } from 'src/app/modelo/Disciplina';
@@ -197,6 +197,4 @@ export class ActividadComponent implements OnInit {
       }
     );
   }
-
-  
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { response } from 'express';
 import { Periodo } from 'src/app/modelo/Periodo';
 import { PeriodoService } from 'src/app/servicios/periodo.service';
 
@@ -20,8 +21,20 @@ export class PeriodoComponent implements OnInit {
     this.listarPeriodo();
   }
 
-  
-  
+  listarPeriodo(): void {
+    this.peri.obtenerSemestre().subscribe(
+      (data) => {
+        // Ordenar los semestres por año de forma descendente
+        this.periodo = data.sort((a, b) => parseInt(b.anio.toString()) - parseInt(a.anio.toString()));
+        console.log('Semestres disponibles: ', this.periodo);
+      },
+      (error) => {
+        console.error('Error al obtener semestres:', error);
+      }
+    );    
+  }
+
+
   crearSemestre(): void {
     const yearPattern = /^\d{4}$/;
 
@@ -95,17 +108,12 @@ export class PeriodoComponent implements OnInit {
       }
     );
   }
-  
-  listarPeriodo(): void {
-    this.peri.obtenerSemestre().subscribe(
-      (data) => {
-        // Ordenar los semestres por año de forma descendente
-        this.periodo = data.sort((a, b) => parseInt(b.anio.toString()) - parseInt(a.anio.toString()));
-        console.log('Semestres disponibles despues de crear: ', this.periodo);
-      },
-      (error) => {
-        console.error('Error al obtener semestres:', error);
-      }
-    );
-  }
+
+  // savedHorario(semestreId: number){
+  //   this.coordinadorService.savedHorario(semestreId, this.coordinador.horario).subscribe(
+  //     (response) => {
+  //       console.log('Horario Guardado', semestreId);
+  //     }
+  //   )
+  // }
 }
