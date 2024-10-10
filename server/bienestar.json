@@ -35,6 +35,23 @@
       "instructor_id": "9"
     },
     {
+      "id": "3",
+      "titulo": " BN",
+      "dia": "Viernes",
+      "estado": "Activo",
+      "horaInicial": "21:59",
+      "horaFinal": "15:56",
+      "fechaCreacion": "2024-09-27T02:56:22.541Z",
+      "fechaPublicacion": "2024-09-27T02:56:22.541Z",
+      "fechaInicioInscripcion": "2024-09-27T02:56:22.541Z",
+      "fechaFinalInscripcion": "2024-09-02",
+      "escenario_id": "3",
+      "tipoActividad_id": "1",
+      "periodo_id": "1",
+      "coordinador_id": 0,
+      "instructor_id": "8"
+    },
+    {
       "id": "4",
       "titulo": " GUA",
       "dia": "Martes",
@@ -421,36 +438,36 @@
       "fechaInicial": "11/30/2023"
     },
     {
-      "id": "2",
+      "id": 2,
+      "anio": "2024",
       "actual": false,
       "denominacion": "I",
-      "fechaInicial": "2024-10-14",
-      "fechaFinal": "2024-10-24",
-      "anio": "2024"
+      "fechaInicial": "2024-10-09",
+      "fechaFinal": "2024-10-15"
     },
     {
-      "id": "3",
+      "id": 3,
+      "anio": "2024",
       "actual": false,
       "denominacion": "II",
-      "fechaInicial": "2024-09-30",
-      "fechaFinal": "2024-10-22",
-      "anio": "2026"
+      "fechaInicial": "2024-10-17",
+      "fechaFinal": "2024-10-17"
     },
     {
-      "id": "4",
+      "id": 4,
       "anio": "2025",
       "actual": false,
       "denominacion": "I",
-      "fechaInicial": "2024-10-22",
-      "fechaFinal": "2024-10-23"
+      "fechaInicial": "2025-11-09",
+      "fechaFinal": "2025-12-11"
     },
     {
-      "id": "5",
+      "id": 5,
       "anio": "2025",
       "actual": false,
       "denominacion": "II",
-      "fechaInicial": "2024-10-22",
-      "fechaFinal": "2024-10-29"
+      "fechaInicial": "2025-10-14",
+      "fechaFinal": "2025-10-30"
     }
   ],
   "programa": [
