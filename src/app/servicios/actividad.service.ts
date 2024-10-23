@@ -7,19 +7,21 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ActividadService {
-
   actividades: Actividad[] = [];
   private apiUrlActividad = 'http://localhost:3000/actividad';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
-
-  createActividad(actividad: Actividad): Observable<any>  {
+  createActividad(actividad: Actividad): Observable<any> {
     return this.http.post(this.apiUrlActividad, actividad);
   }
 
-  obtenerActividades(): Observable<any[]> {
-    return this.http.get<any[]>(this.apiUrlActividad);
+  obtenerActividades(): Observable<Actividad[]> {
+    return this.http.get<Actividad[]>(this.apiUrlActividad);
+  }
+
+  obtenerActividadesPorPeriodo(periodoId: number): Observable<Actividad[]> {
+    return this.http.get<Actividad[]>(`${this.apiUrlActividad}?periodoId=${periodoId}`);
   }
 
   eliminarActividad(id: number): Observable<any> {

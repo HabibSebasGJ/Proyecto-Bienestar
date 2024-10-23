@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { response } from 'express';
 import { Periodo } from 'src/app/modelo/Periodo';
 import { PeriodoService } from 'src/app/servicios/periodo.service';
 
@@ -9,12 +8,11 @@ import { PeriodoService } from 'src/app/servicios/periodo.service';
   styleUrls: ['./periodo.component.scss']
 })
 export class PeriodoComponent implements OnInit {
-
   goodMensaje: string = '';
   errorMensaje: string = '';
   errorMensaje2: string = '';
-  public periodo: Periodo[] = this.peri.semestrePeriodo;
-  newPeriodo: Periodo = new Periodo(0, '', false, '', new Date(), new Date());
+  public periodo: Periodo[] = [];
+  newPeriodo: Periodo = new Periodo(0, 0, false, '', new Date(), new Date()); // Cambiado a 0 para 'anio'
 
   constructor(private peri: PeriodoService) {}
 
@@ -25,16 +23,15 @@ export class PeriodoComponent implements OnInit {
   listarPeriodo(): void {
     this.peri.obtenerSemestre().subscribe(
       (data) => {
-        // Ordenar los semestres por año de forma descendente
-        this.periodo = data.sort((a, b) => parseInt(b.anio.toString()) - parseInt(a.anio.toString()));
+        this.periodo = data.sort((a, b) => b.anio - a.anio); // Ahora funciona correctamente
         console.log('Semestres disponibles: ', this.periodo);
       },
       (error) => {
         console.error('Error al obtener semestres:', error);
+        this.errorMensaje = 'Error al cargar los semestres.';
       }
     );    
   }
-
 
   crearSemestre(): void {
     const yearPattern = /^\d{4}$/;
@@ -45,10 +42,10 @@ export class PeriodoComponent implements OnInit {
     }
 
     if (!this.newPeriodo.anio ||
-      !this.newPeriodo.denominacion ||
+        !this.newPeriodo.denominacion ||
         !this.newPeriodo.fechaInicial ||
         !this.newPeriodo.fechaFinal) {
-          this.errorMensaje = 'Por favor, complete todos los campos';
+      this.errorMensaje = 'Por favor, complete todos los campos';
       return;
     }
 
@@ -56,21 +53,19 @@ export class PeriodoComponent implements OnInit {
       this.errorMensaje = 'La fecha final debe ser posterior a la fecha inicial.';
       return;
     }
-
-    // Limpia el mensaje de error si todos los campos están llenos
-    this.errorMensaje = '';
-    this.goodMensaje = '';
-
-    // const ultimoId = this.periodo.length > 0 ? Math.max(...this.periodo.map(p => parseInt(p.id))) : 0;
-    // this.newPeriodo.id = (ultimoId + 1).toString(); // Convertir a cadena
-
+ 
+    this.errorMensaje = '';  // Limpiar errores previos
+    this.goodMensaje = '';    // Limpiar mensaje de éxito
 
     this.peri.crearSemestre(this.newPeriodo).subscribe(
       (response) => {
         console.log('Semestre Creado: ', response);
         this.listarPeriodo();
-        this.newPeriodo = new Periodo(0, '', false, '', new Date(), new Date());
+        this.newPeriodo = new Periodo(0, 0, false, '', new Date(), new Date()); // Cambiado a 0 para 'anio'
         this.goodMensaje = 'Semestre Creado';
+
+        // Establecer el nuevo periodo como activo
+        this.peri.setPeriodoActivo(response); // Asegúrate de que `response` contenga el nuevo periodo creado
       },
       (error) => {
         console.error('Error al crear el Periodo: ', error);
@@ -81,12 +76,11 @@ export class PeriodoComponent implements OnInit {
   
   cambiarEstado(semestre: Periodo): void {
     const nuevoEstado = !semestre.actual;
-    
+
     if (nuevoEstado) {
-      // Desactivar cualquier semestre que esté activo
       const semestreActivo = this.periodo.find(p => p.actual);
       if (semestreActivo && semestreActivo.id !== semestre.id) {
-        semestreActivo.actual = false; // Desactivar el semestre activo
+        semestreActivo.actual = false;
         this.peri.cambiarEstadoSemestre(semestreActivo.id, false).subscribe(
           (response) => {
             console.log('Estado del semestre desactivado:', response);
@@ -103,7 +97,7 @@ export class PeriodoComponent implements OnInit {
       (response) => {
         semestre.actual = nuevoEstado;
         console.log('Estado del semestre actualizado:', response);
-        this.listarPeriodo();
+        this.listarPeriodo();  // Asegúrate de que la lista se actualice
       },
       (error) => {
         console.error('Error al cambiar el estado del semestre:', error);
@@ -111,12 +105,4 @@ export class PeriodoComponent implements OnInit {
       }
     );
   }
-
-  // savedHorario(semestreId: number){
-  //   this.coordinadorService.savedHorario(semestreId, this.coordinador.horario).subscribe(
-  //     (response) => {
-  //       console.log('Horario Guardado', semestreId);
-  //     }
-  //   )
-  // }
 }

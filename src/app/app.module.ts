@@ -74,6 +74,7 @@ import { InformadorComponent } from './utilidades/informador/informador.componen
     HttpClientModule,ToastrModule.forRoot(),
     BrowserAnimationsModule,
     MatDialogModule
+    
 
   ],
   providers: [DisciplinaComponent,InformadorComponent],
