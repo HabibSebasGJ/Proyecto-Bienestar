@@ -1,106 +1,123 @@
 {
   "actividad": [
     {
-      "id": "1",
-      "dia": "Viernes",
-      "estado": "Activo",
-      "fechaCreacion": "09/26/2023",
-      "fechaFinalInscripcion": "09/29/2023",
-      "fechaInicioInscripcion": "09/02/2023",
-      "fechaPublicacion": "09/21/2023",
-      "horaFinal": "13:00",
-      "horaInicial": "00:00",
-      "titulo": "Actividad Deportiva/",
-      "coordinador_id": 1,
-      "escenario_id": 1,
-      "instructor_id": "7",
-      "periodo_id": 1,
-      "tipoActividad_id": 1
-    },
-    {
-      "id": "100",
-      "dia": "Martes",
-      "estado": "Activo",
-      "fechaCreacion": "09/26/2023",
-      "fechaFinalInscripcion": "09/29/2023",
-      "fechaInicioInscripcion": "09/02/2023",
-      "fechaPublicacion": "09/21/2023",
-      "horaFinal": "13:00",
-      "horaInicial": "00:00",
-      "titulo": "Actividad Deportiva777",
-      "coordinador_id": 1,
-      "escenario_id": 1,
-      "instructor_id": "1",
-      "periodo_id": 1,
-      "tipoActividad_id": 1
-    },
-    {
       "id": "2",
-      "dia": "Lunes",
+      "titulo": " RG",
+      "dia": "Miercoles",
       "estado": "Activo",
-      "fechaCreacion": "09/26/2023",
-      "fechaFinalInscripcion": "09/29/2023",
-      "fechaInicioInscripcion": "09/02/2023",
-      "fechaPublicacion": "09/21/20231",
-      "horaFinal": "13:00",
-      "horaInicial": "00:00",
-      "titulo": "Actividad danza",
-      "coordinador_id": 1,
-      "escenario_id": 1,
-      "instructor_id": "1",
-      "periodo_id": 1,
-      "tipoActividad_id": 1
+      "horaInicial": "21:56",
+      "horaFinal": "21:59",
+      "fechaCreacion": "2024-09-27T02:53:55.926Z",
+      "fechaPublicacion": "2024-09-27T02:53:55.926Z",
+      "fechaInicioInscripcion": "2024-09-27T02:53:55.926Z",
+      "fechaFinalInscripcion": "2024-09-04",
+      "escenario_id": "3",
+      "tipoActividad_id": "1",
+      "periodo_id": "1",
+      "coordinador_id": 0,
+      "instructor_id": "9"
     },
     {
       "id": "3",
-      "titulo": " danza f.-3",
-      "dia": "Miercoles",
-      "estado": "Activo3",
-      "horaInicial": "13:33",
-      "horaFinal": "16:33",
-      "fechaCreacion": "2023-10-22T17:33:34.828Z",
-      "fechaPublicacion": "2023-10-22T17:33:34.828Z",
-      "fechaInicioInscripcion": "2023-10-22T17:33:34.828Z",
-      "fechaFinalInscripcion": "2023-10-26",
-      "escenario_id": 2,
-      "tipoActividad_id": 1,
-      "periodo_id": 0,
+      "titulo": " BN",
+      "dia": "Viernes",
+      "estado": "Activo",
+      "horaInicial": "21:59",
+      "horaFinal": "15:56",
+      "fechaCreacion": "2024-09-27T02:56:22.541Z",
+      "fechaPublicacion": "2024-09-27T02:56:22.541Z",
+      "fechaInicioInscripcion": "2024-09-27T02:56:22.541Z",
+      "fechaFinalInscripcion": "2024-09-02",
+      "escenario_id": "3",
+      "tipoActividad_id": "1",
+      "periodo_id": "1",
       "coordinador_id": 0,
       "instructor_id": "8"
     },
     {
-      "id": "4",
-      "titulo": " danza f.-2",
+      "id": "5",
+      "titulo": " ol",
+      "dia": "Jueves",
+      "estado": "Activo",
+      "horaInicial": "22:14",
+      "horaFinal": "22:14",
+      "fechaCreacion": "2024-09-27T03:07:46.543Z",
+      "fechaPublicacion": "2024-09-27T03:07:46.543Z",
+      "fechaInicioInscripcion": "2024-09-27T03:07:46.543Z",
+      "fechaFinalInscripcion": "2024-09-14",
+      "escenario_id": "1",
+      "tipoActividad_id": "1",
+      "periodo_id": "1",
+      "coordinador_id": 0,
+      "instructor_id": "9"
+    },
+    {
+      "id": "1",
+      "titulo": " AS",
+      "dia": "Jueves",
+      "estado": "Inactivo",
+      "horaInicial": "22:28",
+      "horaFinal": "22:29",
+      "fechaCreacion": "2024-09-27T03:25:23.705Z",
+      "fechaPublicacion": "2024-09-27T03:25:23.705Z",
+      "fechaInicioInscripcion": "2024-09-27T03:25:23.705Z",
+      "fechaFinalInscripcion": "2024-09-04",
+      "escenario_id": "1",
+      "tipoActividad_id": "1",
+      "periodo_id": "1",
+      "coordinador_id": 0,
+      "instructor_id": "2"
+    },
+    {
+      "id": "2",
+      "titulo": "HHG",
       "dia": "Miercoles",
       "estado": "Activo",
-      "horaInicial": "13:33",
-      "horaFinal": "16:33",
-      "fechaCreacion": "2023-10-22T17:33:34.828Z",
-      "fechaPublicacion": "2023-10-22T17:33:34.828Z",
-      "fechaInicioInscripcion": "2023-10-22T17:33:34.828Z",
-      "fechaFinalInscripcion": "2023-10-26",
-      "escenario_id": 2,
-      "tipoActividad_id": 1,
+      "horaInicial": "22:29",
+      "horaFinal": "22:29",
+      "fechaCreacion": "2024-09-27T03:25:43.780Z",
+      "fechaPublicacion": "2024-09-27T03:25:43.780Z",
+      "fechaInicioInscripcion": "2024-09-27T03:25:43.780Z",
+      "fechaFinalInscripcion": "2024-09-13",
+      "escenario_id": "1",
+      "tipoActividad_id": "2",
       "periodo_id": 0,
       "coordinador_id": 0,
       "instructor_id": "7"
     },
     {
-      "id": "5",
-      "titulo": " danza f.-4",
-      "dia": "Jueves",
+      "id": "1",
+      "titulo": " Futbol",
+      "dia": "Viernes",
       "estado": "Activo",
-      "horaInicial": "13:33",
-      "horaFinal": "16:33",
-      "fechaCreacion": "2023-10-22T17:33:34.828Z",
-      "fechaPublicacion": "2023-10-22T17:33:34.828Z",
-      "fechaInicioInscripcion": "2023-10-22T17:33:34.828Z",
-      "fechaFinalInscripcion": "2023-10-26",
-      "escenario_id": 2,
-      "tipoActividad_id": 1,
+      "horaInicial": "00:39",
+      "horaFinal": "15:39",
+      "fechaCreacion": "2024-10-10T03:39:28.520Z",
+      "fechaPublicacion": "2024-10-10T03:39:28.520Z",
+      "fechaInicioInscripcion": "2024-10-10T03:39:28.520Z",
+      "fechaFinalInscripcion": "2024-10-01",
+      "escenario_id": "3",
+      "tipoActividad_id": "1",
       "periodo_id": 0,
       "coordinador_id": 0,
-      "instructor_id": "1"
+      "instructor_id": "8"
+    },
+    {
+      "id": "2",
+      "titulo": "Voleibol",
+      "dia": "Lunes",
+      "estado": "Activo",
+      "horaInicial": "23:40",
+      "horaFinal": "22:42",
+      "fechaCreacion": "2024-10-10T03:40:00.241Z",
+      "fechaPublicacion": "2024-10-10T03:40:00.241Z",
+      "fechaInicioInscripcion": "2024-10-10T03:40:00.241Z",
+      "fechaFinalInscripcion": "2024-10-01",
+      "escenario_id": "2",
+      "tipoActividad_id": "2",
+      "periodo_id": 0,
+      "coordinador_id": 0,
+      "instructor_id": "8"
     }
   ],
   "area": [
@@ -181,7 +198,7 @@
       "id": "3",
       "nombre": "Voleybol",
       "descripcion": "Voleybol",
-      "estado": "Activo"
+      "estado": "Inactivo"
     }
   ],
   "escenario": [
@@ -232,6 +249,13 @@
       "actividad_id": "1"
     },
     {
+      "id": "7",
+      "tipoVinculacion": "Estudiante",
+      "fechaInscripcion": "2024-01-10T1:33:34.828Z",
+      "usuario": "3",
+      "actividad_id": "1"
+    },
+    {
       "id": "10",
       "tipoVinculacion": "Estudiante",
       "fechaInscripcion": "2024-04-10T5:33:34.828Z",
@@ -244,97 +268,6 @@
       "fechaInscripcion": "2024-04-10T9:33:34.828Z",
       "usuario": "6",
       "actividad_id": "4"
-    },
-    {
-      "id": 1,
-      "tipoVinculacion": "Estudiante",
-      "fechaInscripcion": "2024-10-04T16:29:13.405Z",
-      "usuario": "3",
-      "actividad_id": "2"
-    },
-    {
-      "id": 1,
-      "tipoVinculacion": "Estudiante",
-      "fechaInscripcion": "2024-10-04T16:29:17.678Z",
-      "usuario": "3",
-      "actividad_id": "3"
-    },
-    {
-      "id": 1,
-      "tipoVinculacion": "Estudiante",
-      "fechaInscripcion": "2024-10-04T16:29:20.359Z",
-      "usuario": "3",
-      "actividad_id": "5"
-    },
-    {
-      "id": 1,
-      "tipoVinculacion": "Estudiante",
-      "fechaInscripcion": "2024-10-04T16:29:40.728Z",
-      "usuario": "3",
-      "actividad_id": "3"
-    },
-    {
-      "id": 1,
-      "tipoVinculacion": "Estudiante",
-      "fechaInscripcion": "2024-10-04T16:30:01.947Z",
-      "usuario": "3",
-      "actividad_id": "3"
-    },
-    {
-      "id": 1,
-      "tipoVinculacion": "Estudiante",
-      "fechaInscripcion": "2024-10-04T17:13:03.343Z",
-      "usuario": "3",
-      "actividad_id": "5"
-    },
-    {
-      "id": 1,
-      "tipoVinculacion": "Estudiante",
-      "fechaInscripcion": "2024-10-04T17:13:47.851Z",
-      "usuario": "3",
-      "actividad_id": "100"
-    },
-    {
-      "id": 1,
-      "tipoVinculacion": "Estudiante",
-      "fechaInscripcion": "2024-10-04T17:13:52.857Z",
-      "usuario": "3",
-      "actividad_id": "3"
-    },
-    {
-      "id": 1,
-      "tipoVinculacion": "Estudiante",
-      "fechaInscripcion": "2024-10-04T17:25:42.245Z",
-      "usuario": "3",
-      "actividad_id": "2"
-    },
-    {
-      "id": 1,
-      "tipoVinculacion": "Estudiante",
-      "fechaInscripcion": "2024-10-04T17:25:43.879Z",
-      "usuario": "3",
-      "actividad_id": "2"
-    },
-    {
-      "id": 1,
-      "tipoVinculacion": "Estudiante",
-      "fechaInscripcion": "2024-10-04T17:25:45.794Z",
-      "usuario": "3",
-      "actividad_id": "2"
-    },
-    {
-      "id": 1,
-      "tipoVinculacion": "Estudiante",
-      "fechaInscripcion": "2024-10-04T17:25:47.968Z",
-      "usuario": "3",
-      "actividad_id": "2"
-    },
-    {
-      "id": 1,
-      "tipoVinculacion": "Estudiante",
-      "fechaInscripcion": "2024-10-04T17:25:49.981Z",
-      "usuario": "3",
-      "actividad_id": "2"
     }
   ],
   "instructor": [
@@ -497,12 +430,20 @@
   ],
   "periodo": [
     {
+      "id": "0",
+      "anio": "2024",
+      "actual": false,
+      "denominacion": "I",
+      "fechaInicial": "2024-02-01",
+      "fechaFinal": "2024-07-02"
+    },
+    {
       "id": "1",
+      "anio": "2024",
       "actual": true,
-      "anio": 2023,
       "denominacion": "II",
-      "fechaFinal": "08/01/2023",
-      "fechaInicial": "11/30/2023"
+      "fechaInicial": "2024-08-02",
+      "fechaFinal": "2024-10-03"
     }
   ],
   "programa": [
@@ -531,6 +472,12 @@
       "titulo": "Practica de voleivol",
       "objetivo": "Practicar",
       "descripcion": "Si"
+    },
+    {
+      "id": "0",
+      "titulo": "",
+      "objetivo": "",
+      "descripcion": ""
     }
   ],
   "usuario": [

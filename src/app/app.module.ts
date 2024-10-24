@@ -64,8 +64,12 @@ import { InformadorComponent } from './utilidades/informador/informador.componen
     HorarioIDeportivoComponent,
     MiHorarioComponent,
     ListaInscripcionComponent,
+<<<<<<< HEAD
     CronogramaActividadesInstructorComponent,
     
+=======
+    CronogramaActividadesInstructorComponent
+>>>>>>> origin/Actividades
   ],
   imports: [
     BrowserModule,
@@ -76,6 +80,10 @@ import { InformadorComponent } from './utilidades/informador/informador.componen
     BrowserAnimationsModule,
     MatDialogModule
     
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/Actividades
   ],
   providers: [DisciplinaComponent,InformadorComponent],
   bootstrap: [AppComponent]
